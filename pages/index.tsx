@@ -22,6 +22,7 @@ export default function HomePage() {
 
   return (
     <div style={{ width: "800px", minHeight: "500px", height: "100vh" }}>
+      <div>Phone: {process.env.NEXT_PUBLIC_PHONE}</div>
       <TwilioComplianceEmbed
         inquiryId={inquiry.inquiryId}
         inquirySessionToken={inquiry.inquirySessionToken}
