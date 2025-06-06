@@ -1,8 +1,12 @@
 :root {
   --logo-width: 100px;
   --main-padding: 2.5%;
-
+  --background-color: #f8f9fa;
   --header-height: 60px;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 main {
