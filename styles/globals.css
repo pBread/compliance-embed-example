@@ -13,3 +13,13 @@ main {
   min-height: calc(100vh - var(--header-height));
   padding: 12px var(--main-padding);
 }
+
+header {
+  padding: 12px var(--main-padding);
+  background-color: white !important;
+  border-bottom: 1px solid #dcdddd;
+}
+
+.logo {
+  width: 200px;
+}
