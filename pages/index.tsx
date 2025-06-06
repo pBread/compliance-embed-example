@@ -21,7 +21,7 @@ export default function HomePage() {
   if (!inquiry) return <div>Loading</div>;
 
   return (
-    <div style={{ width: "800px", minHeight: "500px", height: "100vh" }}>
+    <div style={{ width: "800px", height: "80vh" }}>
       <div>Phone: {process.env.NEXT_PUBLIC_PHONE}</div>
       <TwilioComplianceEmbed
         inquiryId={inquiry.inquiryId}
