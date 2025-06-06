@@ -1,6 +1,14 @@
-import { TwilioComplianceEmbed } from "@twilio/twilio-compliance-embed";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
+const TwilioComplianceEmbed = dynamic(
+  () =>
+    import("@twilio/twilio-compliance-embed").then((item) => {
+      console.debug("import dynamic", Object.keys(item));
+      return { default: item.TwilioComplianceEmbed };
+    }),
+  { ssr: false },
+);
 export default function HomePage() {
   const [inquiry, setInquiry] = useState<Inquiry>();
 
